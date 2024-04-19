@@ -1,8 +1,7 @@
 name: GitHub Actions Demo
 on:
-  push:
-    paths:
-    - 'code/test.txt'
+  issues:
+    types: [opened]
 jobs:
   Explore-GitHub-Actions:
     runs-on: ubuntu-latest
